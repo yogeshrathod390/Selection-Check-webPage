@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<section>
+    <h1>SELECTION CHECK</h1>
+    <div>
+        <p> PUT YOUR MARKS TO CHECK YOU ARE <br>CAPABLE OR NOT FOR FURTHER ROUND</p>
+
+    </div>
+
+
+    <ul>
+        
+        <li><a href="">Home</a></li>
+        <li><a href="">Check Here</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+
+    <div>
+        <p style="color: red;"><b style="color:black;">ELEGIBILITY CRITERYA-</b>candidates must pass the semester examination, For general category candidates,<br> it is mandatory
+            to<b style="color:blue;"> SC / ST / OBC category</b> candidates<br> have to get above<b style="color: blue
+            ;">150 Marks</b>to become eligible for NEET 2021.</p>
+          
+        
+        <input id="marks" value=150>
+        <button onclick="myFunction()">Click here</button>
+
+        <ul>
+            <p id="demo"></p>
+        </ul>
+    </div>
+
+</section>
+    <script>
+
+        function myFunction() {
+            let marks = document.getElementById("marks").value;
+            let valuable = (marks > 150) ? "YOU ARE ABLE " : "YOU ARE NOT ABLE "
+
+            document.getElementById("demo").innerHTML = valuable + "TO NEXT ROUND "
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
